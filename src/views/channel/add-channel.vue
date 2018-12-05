@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-17 14:44:47
  * @Last Modified by: hzq
- * @Last Modified time: 2018-11-08 11:32:10
+ * @Last Modified time: 2018-12-05 17:12:39
  * @文件说明: 新建渠道页面
  */
 <template>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-    export default { name: 'add-channel' };
+    export default { name: 'add-channel' }
 </script>
 
 <style   scoped>
