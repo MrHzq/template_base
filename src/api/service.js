@@ -2,11 +2,10 @@
  * @Author: hzq
  * @Date: 2018-08-28 16:05:27
  * @Last Modified by: hzq
- * @Last Modified time: 2018-12-05 17:22:22
+ * @Last Modified time: 2018-12-10 10:25:18
  * @文件说明: 请求配置
  */
 import axios from 'axios'
-import apiError from './apiError'
 
 // 默认为：测试环境
 let baseURL = 'https://open-api.beone.app'
@@ -21,7 +20,7 @@ if (process.env.PATH_ENV === 'prod') {
 
 // 创建实例时设置配置的默认值
 const Service = axios.create({
-    timeout: 1000 * 6, // 6秒超时
+    // timeout: 1000 * 6, // 6秒超时
     baseURL,
     headers: { 'Content-Type': 'application/json; charset=UTF-8' }
 })
@@ -46,7 +45,6 @@ Service.interceptors.response.use(
     error => {
         // 对响应错误做点什么
         if (error) {
-            apiError(error)
             return Promise.reject(error.response.data)
         }
     }
