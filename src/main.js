@@ -1,12 +1,23 @@
 import Vue from 'vue'
+import hzqAxios from 'hzq-axios'
 import App from './App'
 import router from './router'
 import store from './store'
 import tool from './tool'
-import api from './api'
+import Url from './apiUrl'
 
-Vue.use(api)
 Vue.use(tool)
+Vue.use(hzqAxios, Url, {
+    baseURL: 'https://open-api.beone.app',
+    preURL: 'https://api-t.xkt.one',
+    prodURL: 'https://api.dzqqsc.com'
+    // createConfig: {},
+    // beforeRequest(config) {
+    // return config
+    // },
+    // respSuccess(resp) {},
+    // respError(error) {}
+})
 
 Vue.config.productionTip = false
 
