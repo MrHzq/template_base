@@ -14,9 +14,9 @@
     "dependencies": {
         "axios": "^0.18.0",
         "cross-env": "^5.2.0",
-        "hzq-axios": "^1.0.5",
-        "hzq-router": "^1.0.1",
-        "hzq-tool": "^1.0.2",
+        "hzq-axios": "^1.0.6",
+        "hzq-router": "^1.0.2",
+        "hzq-tool": "^1.0.5",
         "node-sass": "^4.11.0",
         "sass-loader": "^7.1.0",
         "vue": "^2.5.2",
