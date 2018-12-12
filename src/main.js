@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import hzqAxios from 'hzq-axios'
 import App from './App'
 import router from './router'
 import store from './store'
-import tool from './tool'
-import Url from './apiUrl'
+import hzqTool from 'hzq-tool'
+import hzqAxios from 'hzq-axios'
+import apiUrl from './apiUrl'
 
-Vue.use(tool)
-Vue.use(hzqAxios, Url, {
+Vue.use(hzqTool)
+Vue.use(hzqAxios, apiUrl, {
     baseURL: 'https://open-api.beone.app',
     preURL: 'https://api-t.xkt.one',
     prodURL: 'https://api.dzqqsc.com'
