@@ -13,6 +13,15 @@ Vue.use(hzqAxios, apiUrl, {
     prodURL: 'https://api.dzqqsc.com'
 })
 
+const prefix = 'xkt_'
+Vue.prototype.$getItem = key => {
+    return JSON.parse(window.sessionStorage.getItem(prefix + key))
+}
+Vue.prototype.$setItem = (key, data) => {
+    window.sessionStorage.setItem(prefix + key, JSON.stringify(data))
+}
+Vue.prototype.$copy = obj => JSON.parse(JSON.stringify(obj))
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
