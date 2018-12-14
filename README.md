@@ -1,4 +1,4 @@
-# Vue 项目模板--Base
+# Vue 项目模板--Vue Cli 2 + Base
 
 ## 已有配置
 
