@@ -20,4 +20,4 @@
 
 1. 先安装脚手架[hzq-cli](https://www.npmjs.com/package/hzq-cli)：`npm i -g hzq-cli`
 1. `h -V`：查看版本号，确保安装成功
-1. `h i`：根据提示，选择框架`base`即可
+1. `h i`：根据提示，选择框架`cli2_base`即可

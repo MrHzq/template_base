@@ -1,5 +1,5 @@
 <template>
-    <div class="test">我是：Vue 项目模板--Base</div>
+    <div class="test">我是：Cli 2 + Base</div>
 </template>
 
 <script>
