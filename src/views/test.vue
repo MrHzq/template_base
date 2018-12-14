@@ -1,13 +1,10 @@
 <template>
-    <div class="test">我是base</div>
+    <div class="test">我是：Vue 项目模板--Base</div>
 </template>
 
 <script>
     export default {
         name: 'test',
-        data() {
-            return {}
-        },
         created() {
             this.$api
                 .login({
@@ -15,8 +12,7 @@
                     userNo: '13402318457'
                 })
                 .then(res => console.log(res))
-        },
-        methods: {}
+        }
     }
 </script>
 
